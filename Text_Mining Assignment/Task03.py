@@ -5,6 +5,19 @@ Created on Sun Sep 22 18:00:18 2024
 @author: Dell
 """
 
+# Problem Statement:
+# The task is to extract customer reviews for a product from a Meesho product page and perform sentiment analysis on those reviews.
+# We will fetch the reviews from the Meesho product page, clean the extracted text, and perform sentiment analysis to classify the sentiment of each review as positive, negative, or neutral based on the sentiment polarity.
+
+# Business Objective:
+# Sentiment analysis of product reviews helps in understanding customer opinions and feedback about a product. 
+# This can be leveraged by businesses to evaluate the success of a product, detect areas for improvement, and guide future product development or marketing strategies.
+# For instance, a large number of negative reviews might indicate the need for product improvement or a change in its marketing strategy.
+
+# Solution:
+# The solution fetches product reviews from a Meesho product page using web scraping. The reviews are then cleaned using regular expressions to remove unnecessary characters. 
+# After that, sentiment analysis is performed using the TextBlob library to classify each review's sentiment. Based on the sentiment polarity score, reviews are categorized into positive, negative, or neutral.
+
 # Import required libraries
 import requests
 from bs4 import BeautifulSoup
