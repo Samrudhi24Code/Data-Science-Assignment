@@ -5,19 +5,34 @@ Created on Sun Sep 22 18:00:18 2024
 @author: Dell
 """
 
-
-'''Objective:
-    Need to understand customer feedback by analyzing reviews using text
-    mining and sentiment analysis. 
+'''Problem Statement:
+    With the increasing volume of online reviews on e-commerce platforms like Amazon, 
+    businesses face the challenge of efficiently analyzing customer feedback to understand 
+    user sentiment and improve product offerings. Extracting meaningful insights from textual 
+    reviews can help identify areas of improvement and enhance customer satisfaction.
 '''
+
+'''Business Objective:
+    To extract product reviews from an e-commerce website (Amazon), analyze the sentiments 
+    expressed in the reviews, and generate insights through visualization techniques like 
+    unigram and bigram word clouds. The ultimate goal is to provide businesses with actionable 
+    insights into customer opinions, enabling them to enhance product quality and customer experience.
+'''
+
+'''Solution:
+    1. Extract product reviews using web scraping techniques with Python libraries such as 
+       `requests` and `BeautifulSoup`.
+    2. Clean and preprocess the extracted reviews by removing stopwords, punctuation, and 
+       unnecessary characters using libraries such as `re` and `nltk`.
+    3. Perform sentiment analysis on the cleaned reviews using the `TextBlob` library to 
+       classify reviews into Positive, Negative, or Neutral sentiments.
+    4. Generate unigram word clouds for visualizing common keywords in the reviews to 
+       identify recurring themes or concerns.
+    5. Provide insights to businesses based on the analysis, helping them improve their 
+       offerings and address customer needs effectively.
+'''
+
 ##############################################################
-'''
-Task 1:
-    1.	Extract reviews of any product from e-commerce website Amazon.
-    2.	Perform sentiment analysis on this extracted data and build
-    aunigram and bigram word cloud.'''
-
-
 
 # Import required libraries
 
