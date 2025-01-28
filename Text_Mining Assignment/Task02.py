@@ -5,6 +5,16 @@ Created on Sun Sep 22 17:51:02 2024
 @author: Dell
 """
 
+# Problem Statement:
+# The task is to extract movie reviews from an IMDb movie review page and analyze the sentiment of those reviews.
+# We will fetch reviews from the IMDb page for the movie "The Shawshank Redemption," clean the review text, and perform sentiment analysis 
+# to classify each review as positive, negative, or neutral based on the sentiment polarity.
+
+# Business Objective:
+# By performing sentiment analysis on movie reviews, we can derive insights into how viewers feel about a particular movie.
+# This can help in understanding audience opinions, improving marketing strategies, and providing personalized recommendations.
+# For example, if a majority of reviews are positive, the movie can be marketed more aggressively, whereas negative reviews can prompt improvement in certain aspects of the film.
+
 import requests  # Used for sending HTTP requests to fetch the webpage content
 from bs4 import BeautifulSoup  # Used for parsing HTML content and extracting data
 from textblob import TextBlob  # Used for performing sentiment analysis on text
@@ -56,3 +66,4 @@ for i, review in enumerate(cleaned_reviews[:5], 1):  # Analyze the first 5 clean
         print("Sentiment: Negative\n")  # Negative sentiment
     else:
         print("Sentiment: Neutral\n")   # Neutral sentiment
+
